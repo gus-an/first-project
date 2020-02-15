@@ -1,5 +1,6 @@
 package com.gus.springboot.domain.posts;
 
+import com.gus.springboot.domain.BaseTimeEntity;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -13,7 +14,7 @@ import javax.persistence.Id;
 @Getter // 코틀린 등 새 언어 전환으로 롬복이 더이상 필요없을 경우 쉽게 지우기 위해 멀리둠
 @NoArgsConstructor // public Posts() {}
 @Entity // 테이블과 링크될 클래스임
-public class Posts {
+public class Posts extends BaseTimeEntity {
     @Id // 테이블의 PK
     @GeneratedValue(strategy = GenerationType.IDENTITY) // PK 생성규칙, auto-increment 적용
     private Long id; // bigint

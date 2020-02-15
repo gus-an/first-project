@@ -38,6 +38,7 @@ dependencies {
 //    testCompile group: 'junit', name: 'junit', version: '4.12'
     // 버젼을 명시하지 않아야만 맨 위에 작성한 버젼을 따름
     compile('org.springframework.boot:spring-boot-starter-web')
+    compile('org.springframework.boot:spring-boot-starter-mustache')
     compile('org.projectlombok:lombok') // Getter, Setter 등 자동 생성
     compile('org.springframework.boot:spring-boot-starter-data-jpa') // 추상화 라이브러리, 스프링 부트 버젼에 자동으로 맞춤
     compile('com.h2database:h2') // 인메모리 관계형 데이터베이스, 따로 설치 X, 초기화됨
