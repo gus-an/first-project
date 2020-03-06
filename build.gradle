@@ -44,7 +44,7 @@ dependencies {
     compile('org.springframework.session:spring-session-jdbc')
     compile('org.projectlombok:lombok') // Getter, Setter 등 자동 생성
     compile('com.h2database:h2') // 인메모리 관계형 데이터베이스, 따로 설치 X, 초기화됨
-    compile('com.mariadb.jdbc:mariadb-java-client')
+    compile('com.mariadb.jdbc:mariadb-java-client:10.2.21')
     testCompile('org.springframework.boot:spring-boot-starter-test')
     testCompile('org.springframework.security:spring-security-test') // @WithMockUser 기능 위해 추가
 }
