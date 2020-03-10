@@ -24,7 +24,7 @@ apply plugin: 'io.spring.dependency-management' // (필수) 스프링부트의 �
 //}
 
 group 'com.gus'
-version '1.0-SNAPSHOT'
+version '1.0.1-SNAPSHOT'
 sourceCompatibility = 1.8
 
 // 각종 의존성 라이브러리들을 어떤 원격 저장소에서 받을 것인지
