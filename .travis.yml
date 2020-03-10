@@ -33,6 +33,18 @@ deploy:
     local_dir: deploy # before_deploy 에 생성한 디렉토리
     wait-until-deployed: true
 
+  - provider: codedeploy
+    access_key_id: $AWS_ACCESS_KEY
+    secret_access_key: $AWS_SECRET_KEY
+    bucket: s3-bucket-name-123
+    key: first-project.zip
+    bundle_type: zip
+    application: freelec-springboot2-webservice # 웹 콘솔에서 등록한 CodeDeploy 애플리케이션
+    deployment_group: freelec-springboot2-webservice-group # 웹 콘솔에서 등록한 CodeDeploy 배포 그룹
+    region: ap-northeast-2
+    wait-until-deployed: true
+
+
 # CI 실행 완료시 메일로 알람
 notifications:
   email:
